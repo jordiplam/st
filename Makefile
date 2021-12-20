@@ -55,6 +55,6 @@ uninstall:
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
 
 update:
-	git pull git://git.suckless.org/st master
+	git pull --rebase git://git.suckless.org/st master
 
 .PHONY: all options clean dist install uninstall update
